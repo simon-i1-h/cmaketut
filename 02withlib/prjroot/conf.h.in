@@ -1,0 +1,13 @@
+#ifndef CONF_H
+#define CONF_H
+
+/*
+ * optionを元にCMakeがcmakedefineを通常のdefineにしたりコメントアウト
+ * したりする
+ */
+#cmakedefine USE_MYMATH
+
+#define vermajor @Tutorial_VERSION_MAJOR@
+#define verminor @Tutorial_VERSION_MINOR@
+
+#endif /* CONF_H */
