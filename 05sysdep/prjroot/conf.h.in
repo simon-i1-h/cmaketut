@@ -1,0 +1,12 @@
+#ifndef CONF_H
+#define CONF_H
+
+#cmakedefine USE_MYMATH
+
+#define vermajor @Tutorial_VERSION_MAJOR@
+#define verminor @Tutorial_VERSION_MINOR@
+
+/* このようにして、シンボルの有無をマクロで検出できるよ。すごいね。 */
+#cmakedefine HAVE_REALLOCARRAY
+
+#endif /* CONF_H */
