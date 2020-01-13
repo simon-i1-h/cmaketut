@@ -24,3 +24,7 @@ overview.txtはcmake-buildsystem(7)を参考にした方がよい。今は誤っ
 
 その他:
 - https://heavywatal.github.io/dev/cmake.html
+- cmake-language(7)
+- https://qiita.com/mrk_21/items/186439952a6665184444
+- https://cliutils.gitlab.io/modern-cmake/
+- cmake-packages(7)
