@@ -1,7 +1,7 @@
 プロジェクト(project):
-グルーピングというかくくりというか。トップレベルのCMakeFiles.txt(後述)
+グルーピングというかくくりというか。トップレベルのCMakeLists.txt(後述)
 でprojectコマンドを使ってプロジェクトを宣言する必要がある。あるいは、
-projectコマンドを使ってプロジェクトを宣言したCMakeFiles.txtがトップレ
+projectコマンドを使ってプロジェクトを宣言したCMakeLists.txtがトップレ
 ベルプロジェクトとみなされるともいえるかもしれない。IDEや他のビルドシ
 ステム(e.g. Gradle)で言うところのプロジェクトに当たりそう。
 
@@ -16,8 +16,8 @@ makeでいうターゲットのそれ。成果物。よく使うものに2種類
 CMakeファイル:
 CMakeの設定には同じ言語(CMake言語とでも言うべきか)で書かれた2種類のファ
 イルがある
-- CMakeFiles.txt
-  CMakeFiles.txtが置かれたディレクトリについてのビルド設定を管理するこ
+- CMakeLists.txt
+  CMakeLists.txtが置かれたディレクトリについてのビルド設定を管理するこ
   とができる。
 - *.cmake
   各所で共通に使われるモジュール。組み込みのモジュールについては
@@ -51,9 +51,9 @@ optionのドキュメントを参照のこと。
 変数にはスコープがある。
 - 関数スコープ
 - ディレクトリスコープ
-  各CMakeFiles.txtはスコープを作る。あるCMakeFiles.txtは上位の
-  CMakeFiles.txtのディレクトリスコープ変数を継承する。グローバルではな
-  いので、下位のCMakeFiles.txtで変数を変更しても、上位のCMakeFiles.txt
+  各CMakeLists.txtはスコープを作る。あるCMakeLists.txtは上位の
+  CMakeLists.txtのディレクトリスコープ変数を継承する。グローバルではな
+  いので、下位のCMakeLists.txtで変数を変更しても、上位のCMakeLists.txt
   には反映されない。
 - 永続キャッシュ
   キャッシュ変数。グローバル変数。
