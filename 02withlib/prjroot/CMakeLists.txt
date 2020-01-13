@@ -31,7 +31,7 @@ target_include_directories(Tutorial PUBLIC
   ${EXTRA_INCLUDES}
   )
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 99 CACHE STRING "c standard")
 set(CMAKE_C_STANDARD_REQUIRED True)
 set(CMAKE_C_EXTENSIONS True)
 
